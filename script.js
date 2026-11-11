@@ -1,6 +1,6 @@
 const people = [
   { slug: "micheal-phelps", name: "Micheal Phelps", note: "Two picks for a quiet watch" },
-  { slug: "micheal-collins", name: "Micheal Collins - Me", note: "A classic cartoon corner" },
+  { slug: "micheal-collins", name: "Karaas", note: "A classic cartoon corner" },
   { slug: "colin-o", name: "Colin O", note: "A full playlist for the room" },
   { slug: "aidan", name: "Aidan", note: "Music, plus two games to pick up" },
   { slug: "christian", name: "Christian", note: "A lot of music and a game break" },

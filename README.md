@@ -1,6 +1,6 @@
-# The Student Lounge
+# StudyBreak
 
-A hash-routed lounge for videos, games, and requests. The request form uses Supabase so visitor submissions are shared, while the private inbox is protected by authentication and database row-level security.
+StudyBreak is a hash-routed school-time media hub for videos, games, and requests. The request form uses Supabase so visitor submissions are shared, while the private inbox is protected by authentication and database row-level security.
 
 ## Run locally
 

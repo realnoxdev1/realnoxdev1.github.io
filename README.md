@@ -17,7 +17,7 @@ Open http://localhost:4173.
 2. In the repository, open **Settings → Pages**.
 3. Choose **Deploy from a branch**, select `main` and `/ (root)`, then save.
 
-GitHub will provide a URL like `https://your-username.github.io/the-student-lounge/`.
+For a root URL like `https://realnoxdev1.github.io/`, the repository must be named `realnoxdev1.github.io` and owned by `realnoxdev1`.
 
 ## Set up accounts and Pro access
 
@@ -25,7 +25,7 @@ The **Account** page uses Supabase Auth. Logged-out visitors are invited to sign
 
 Run the full `supabase-setup.sql` after updating the site to enable profile role tags, image uploads, and managed page media. Members can upload avatars, and active Pro members can also upload a banner image instead of using a preset or URL. Images must be JPEG, PNG, GIF, WebP, or AVIF and under 5 MB; Storage policies limit uploads to each account’s own folder. Accounts for `kbotros2027@staschool.us` and `karaas.botros2@gmail.com` receive the **Developer** tag; `aluckay2027@staschool.us` receives **Helper**. These labels are derived from the authenticated account email and shown on the account profile and chat messages. Helpers and Developers can open **Manage pages** to add/remove video and game embeds for each person; only Developers can access the request inbox.
 
-For Google sign-in, enable the Google provider in Supabase **Authentication → Providers → Google**. Create a Google OAuth client in Google Cloud Console, add Supabase's callback URL (`https://zprkilbqwbckxbvojvkc.supabase.co/auth/v1/callback`) as an authorized redirect URI in Google, then paste the Google client ID and secret into the Supabase provider settings and enable the provider. In Supabase **Authentication → URL Configuration**, set the site URL to `https://realnoxdev1.github.io/the-student-lounge/` and add `https://realnoxdev1.github.io/the-student-lounge/**` and `http://localhost:4173/**` to allowed redirect URLs. Run the full `supabase-setup.sql` in the SQL Editor to apply the database access policies. To grant a Helper Pro themes, first have the Helper create an account, then replace `HELPER_EMAIL_HERE` in the Pro entitlement SQL example at the bottom of that file and run it. Helpers do not get inbox access. Never put a Supabase service-role key or Google client secret in the website.
+For Google sign-in, enable the Google provider in Supabase **Authentication → Providers → Google**. Create a Google OAuth client in Google Cloud Console, add Supabase's callback URL (`https://zprkilbqwbckxbvojvkc.supabase.co/auth/v1/callback`) as an authorized redirect URI in Google, then paste the Google client ID and secret into the Supabase provider settings and enable the provider. In Supabase **Authentication → URL Configuration**, set the site URL to `https://realnoxdev1.github.io/` and add `https://realnoxdev1.github.io/**` and `http://localhost:4173/**` to allowed redirect URLs. Run the full `supabase-setup.sql` in the SQL Editor to apply the database access policies. To grant a Helper Pro themes, first have the Helper create an account, then replace `HELPER_EMAIL_HERE` in the Pro entitlement SQL example at the bottom of that file and run it. Helpers do not get inbox access. Never put a Supabase service-role key or Google client secret in the website.
 
 ## Set up private video requests
 
